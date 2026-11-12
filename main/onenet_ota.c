@@ -399,7 +399,7 @@ static void onenet_ota_task(void* param)
         ESP_LOGE(TAG,"Upload Status Fail");
         goto onenet_ota_task_fail;
     }
-    ESP_LOGI(TAG,"OTA Finished!");
+    //ESP_LOGI(TAG,"OTA Finished!");
     // 6. 重启
     esp_restart();
 onenet_ota_task_fail:
