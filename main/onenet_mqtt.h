@@ -3,10 +3,10 @@
 
 #include "esp_err.h"
 #include "device_model.h"
-
-#define ONENET_PDORUCT_ID "1NhV5y09wN"
-#define ONENET_ACCESS_KEY "Ye9nS9uBuW/5ifuZGVtlRynxYVUxXX1ZmU8jQ9MTKV0="
-#define ONENET_DEVICE_NAME "esp32led02"
+#include "onenet_secrets.h"
+#define ONENET_PDORUCT_ID  MY_ONENET_PDORUCT_ID   //replace it with yours
+#define ONENET_ACCESS_KEY  MY_ONENET_ACCESS_KEY   //replace it with yours
+#define ONENET_DEVICE_NAME MY_ONENET_DEVICE_NAME  //replace it with yours
 
 esp_err_t onenet_start(void);
 void onenet_property_report(dev_state_t dev);
